@@ -21,7 +21,7 @@ const Resume = () => {
                             </div>
                         </div>
                         <div className="flex flex-row my-[20px]">
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/piyush-kumar-462335276/">
                                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[purple] mx-[10px] cursor-pointer">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
