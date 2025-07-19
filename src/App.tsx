@@ -10,7 +10,7 @@ function App() {
 
   {/* 2. The Scrollable Content Div */}
   <div className=" z-10 w-full min-h-screen overflow-y-auto flex justify-center bg-[rgba(0,_0,_0,_0.2)] font-strait">
-    <div className=' relative w-[80%] bg-[rgba(28,28,28,1)] mx-[50px] rounded-[40px] my-[50px]'>
+    <div className='relative w-full lg:w-[80%] bg-[rgba(28,28,28,1)] mx-auto my-12 px-6 sm:px-12 rounded-[40px]'>
       <Header />
       <AppRoutes />
       <Footer />

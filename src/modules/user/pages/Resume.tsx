@@ -1,22 +1,22 @@
 import Avatar from "../../../assets/images/AvatarMaker.png";
-
+import OppositeContentTimeline from "../../../shared/component/Timeline";
 
 const Resume = () => {
     return (
         <>
-            <div className="h-[500px] w-[100%] flex justify-center items-center border-b border-t border-[gray] ">
-                <div className="h-[100%] w-[80%] flex">
-                    <div className="h-[100%] w-[50%] flex justify-center items-center">
-                        <div className="h-[350px] w-[350px] rounded-[50%] bg-[gray]  flex justify-center items-center  shadow-[10px_10px_20px_black]">
-                            <img src={Avatar} alt="" className="h-[320px] w-[320px] rounded-[50%] " />
+            <div className=" w-[100%] flex justify-center items-center border-b border-t border-[gray] ">
+                <div className="my-[100px] h-[100%] w-[80%] flex flex-col md:flex-row lg:flex-row flex-col justify-center items-center">
+                    <div className="h-[100%] w-[100%] lg:w-[50%] md:w-[50%] flex justify-center items-center">
+                        <div className="w-[90%] max-w-[350px] aspect-square rounded-full bg-[gray]  flex justify-center items-center  shadow-[10px_10px_20px_black]">
+                            <img src={Avatar} alt="" className="w-[90%] max-w-[320px] aspect-square rounded-full" />
                         </div>
                     </div>
-                    <div className="h-[100%] w-[50%] flex justify-center items-center text-white flex-col">
+                    <div className="h-[100%] w-[100%] lg:w-[50%] md:w-[50%] flex justify-center items-center text-white flex-col">
                         <div>
-                            <h1 className="px-[30px] py-[10px] text-5xl font-bold  font-strait text-[rgba(210,210,210,1)]">
+                            <h1 className="text-center lg:px-[30px] md:px-[30px] py-[10px] text-5xl font-bold  font-strait text-[rgba(210,210,210,1)]">
                                 Piyush Kumar
                             </h1>
-                            <div className="px-[30px] py-[10px] text-[rgba(160,160,160,1)]">
+                            <div className=" text-center lg:px-[30px] md:px-[30px] py-[10px] text-[rgba(160,160,160,1)]">
                                 I’m a focused and motivated person who likes to get things done. I stay calm under pressure and enjoy solving problems. I work well with others and believe in always learning and improving. I like taking on challenges and doing my best in everything I do.
                             </div>
                         </div>
@@ -49,49 +49,29 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[500px] w-[100%]  mt-[20px] border-b border-[gray] ">
+            <div className=" w-[100%]  mt-[20px] border-b border-[gray] pb-[50px]">
                 <div className="px-[30px] py-[10px] text-5xl font-bold flex justify-center font-strait text-[rgba(210,210,210,1)]">Education</div>
-                <div className="h-[100%] w-[100%] ">
-                    <div className="h-[80%] w-[100%] mt-[20px] flex">
-                        <div className="text-white text-3xl h-[90%] w-[50%] border-r border-[gray] flex flex-col ">
-                            <div className=" self-end mt-[70px] mx-[10px]">
-                                <div className="h-[40px] w-[250px] text-xl rounded-[50px] flex justify-center items-center px-[20px] border-[2px] border-[purple]">2022</div>
-                            </div>
-                            <div className="self-end mt-[70px] mx-[10px]">
-                                <div className="h-[40px] w-[250px] text-xl rounded-[50px] flex justify-center items-center px-[20px] border-[2px] border-[purple]">2023 - Ongoing</div>
-                            </div>
 
-                        </div>
-                        <div className="text-white text-3xl  h-[90%] w-[50%] border-l border-[gray]  flex flex-col ">
-
-                            <div className="self-start mt-[50px] mx-[10px]">
-                                <div>High School</div>
-                                <div className="text-xl text-[gray]">Kendriya Vidayalaya Andrews Ganj </div>
-                            </div>
-                            <div className="self-start mt-[50px] mx-[10px]">
-                                <div>Graduation</div>
-                                <div className="text-xl text-[gray]">Bhagwaan Parshuram Institute of Technology</div>
-                            </div>
-                        </div>
-                    </div>
+                <div className="my-[50px]">
+                    <OppositeContentTimeline />
                 </div>
             </div>
-            <div className="h-[300px] w-[100%]  mt-[20px] border-b border-[gray] ">
+            <div className=" w-[100%]  mt-[20px] border-b border-[gray] ">
                 <div className="px-[30px] py-[10px] text-5xl font-bold flex justify-center font-strait text-[rgba(210,210,210,1)]">Skills</div>
-                <div className="h-[70%] w-[100%] flex justify-center">
-                    <div className="h-[100%] w-[60%] flex flex-wrap justify-center my-[20px]">
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">C/C++</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">HTML</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">CSS</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">JavaScript</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">ReactJS</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">TypeScript</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">ReactTS</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">ShedCN</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">Zod</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">MongoDB</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">MySQL</div>
-                        <div className=" mr-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">TailWind</div>
+                <div className=" w-[100%] flex justify-center">
+                    <div className="h-[100%] w-[100%w] lg:w-[60%] flex flex-wrap justify-center my-[20px]">
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">C/C++</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">HTML</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">CSS</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">JavaScript</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">ReactJS</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">TypeScript</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">ReactTS</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">ShedCN</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">Zod</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">MongoDB</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">MySQL</div>
+                        <div className=" m-[10px] text-white bg-[purple] h-[40px] w-[120px] rounded-[25px] flex justify-center items-center text-xl">TailWind</div>
                     </div>
                 </div>
             </div>
